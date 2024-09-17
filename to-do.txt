@@ -1,0 +1,43 @@
+
+Nome,
+Nível da Patente,
+Pontos de Exp,
+Biografia, 
+Inimigos Destruídos, 
+Pontuação total,
+Maior pontuação alcançada,
+Moedas coletadas,
+Índice do Avatar,
+Ìndice da Cor,
+
+1. Estatísticas de Jogo
+Número de inimigos destruídos: Quantos asteroides ou inimigos o jogador destruiu ao longo do tempo.
+-- Tempo total jogado: Quantas horas o jogador dedicou ao jogo.
+-- Partida mais longa: A duração da partida mais longa que o jogador já jogou.
+-- Precisão dos tiros: Percentual de acertos comparado ao número total de tiros disparados.
+
+2. Conquistas
+-- Conquistas e desafios: Introduza um sistema de conquistas que o jogador desbloqueia ao atingir marcos, como "Sobreviver por 10 minutos", "Destruir 1000 asteroides", ou "Alcançar 1 milhão de pontos".
+-- Conquista secreta: Para adicionar mistério, você pode ter conquistas secretas que só aparecem após serem desbloqueadas.
+
+3. Ranking
+Ranking global: O jogador pode comparar sua maior pontuação com a de outros jogadores ao redor do mundo.
+Ranking por amigos: Um ranking local para competir com amigos (caso tenha integração social, como contas ou via redes sociais).
+Ranking mensal ou semanal: Rankings temporários para motivar a competição frequente.
+
+4. Recursos de Personalização
+Alterar Nome de Exibição: Permitir que o jogador altere o nome de exibição sempre que quiser, para refletir seu estilo ou humor.
+Descrição do Jogador: O jogador pode escrever uma pequena biografia ou mensagem personalizada que será exibida em seu perfil ou nos rankings.
+Avatar Personalizado: Implementar a escolha de um avatar que represente o jogador nos rankings e em seu perfil.
+Cor da Nave/Personagem: Permitir que os jogadores personalizem a cor de sua nave ou personagem, escolhendo entre várias opções ou desbloqueando novas cores conforme progridem no jogo.
+Skins e Modelos de Naves/Personagens: Diferentes designs de naves ou personagens que os jogadores podem desbloquear e selecionar para usar durante as partidas.
+Títulos Personalizados: Jogadores podem desbloquear e escolher títulos exclusivos (ex.: "Mestre dos Asteroides", "Sobrevivente Implacável") que aparecem ao lado de seu nome nos rankings ou em seu perfil.
+Efeitos Visuais: Possibilidade de adicionar efeitos especiais ao disparo da nave ou à destruição dos asteroides (como explosões diferentes ou trilhas de luz personalizadas).
+Estilo de Interface: O jogador pode personalizar a interface HUD durante as partidas, escolhendo temas visuais ou cores preferidas para elementos como a barra de vida, pontuação e radar.
+
+5. Progresso e Customização de Perfil
+Ícones de Conquistas: Exibir ícones ou medalhas de conquistas desbloqueadas no perfil do jogador.
+Níveis de Jogador: Cada vez que o jogador atinge certos marcos (como uma quantidade de pontos ou destruição de asteroides), ele pode subir de nível, desbloqueando mais opções de personalização.
+Histórico de Partidas: O jogador pode visualizar o histórico das últimas partidas, incluindo sua maior pontuação, tempo jogado e conquistas feitas.
+Configurações de Preferências de Jogo: Personalizar preferências, como sensibilidade de controle, música e efeitos sonoros, entre outras opções.
+Conexão com Redes Sociais: Permitir que os jogadores conectem suas contas de redes sociais e exibam suas conquistas ou ranking para seus amigos.
