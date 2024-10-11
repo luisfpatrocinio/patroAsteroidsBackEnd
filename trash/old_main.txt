@@ -1,0 +1,91 @@
+
+
+import { getPlayerData, 
+    updatePlayerScore, 
+    updatePlayerDefeatedEnemies, 
+    createNewPlayer, 
+    getPlayersDatabase, 
+    addPlayerToDatabase 
+} from './playerDatabase';
+
+// Criar instancia do Express
+const app = express();
+
+// Configuração do Express
+app.use(express.json());
+
+// Configuração do CORS
+app.use(cors());
+
+// Rota inicial de teste.
+app.get('/', (req: Request, res: Response) => {
+    console.log(`Hello World! :D`);
+
+    // Enviar resposta em json
+    res.json({ 
+        type: "connected",
+        content: "Hello World! :D" 
+    });
+});
+
+// Obter dados do player:
+app.get('/player/:name', (req: Request, res: Response) => {
+    // Exibir no console o nome do jogador solicitado.
+    console.log(`Player data requested:`);
+
+    // Consultar banco de dados para obter dados do jogador.
+    var _data = getPlayerData(req.params.name);
+
+    // Caso o jogador não exista, adicionar:
+    if (!_data) {
+        _data = createNewPlayer(req.params.name);
+        addPlayerToDatabase(_data);
+    }
+
+    // Criar um json etiquetando o tipo de informação enviada.
+    var _response = {
+        type: "playerData",
+        content: _data
+    };
+
+    // Enviar resposta em json
+    res.json(_response);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+})
+
+// Atualizar banco de dados com dados do jogador.
+app.post('/score', (req: Request, res: Response) => {
+    console.log("Request received.");
+    console.log(req.body);
+    
+    // Atualizar info do player.
+    updatePlayerScore(req.body.name, req.body.score);
+    updatePlayerDefeatedEnemies(req.body.name, req.body.enemiesDestroyed);
+
+    res.json(
+        {
+            type: "scoreReceived",
+            content: "Score received."
+        }
+    );
+
+    console.log(getPlayerData(req.body.name));
+});
+
+// Obter dados de todos os jogadores
+app.get('/players', (req: Request, res: Response) => {
+    console.log(`All players data requested`);
+
+    // Criar um json etiquetando o tipo de informação enviada
+    var _response = {
+        type: "allPlayersData",
+        content: getPlayersDatabase()
+    };
+
+    // Enviar resposta em json
+    res.json(_response);
+});

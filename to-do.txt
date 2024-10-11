@@ -10,6 +10,14 @@ Moedas coletadas,
 Índice do Avatar,
 Ìndice da Cor,
 
+Firestone - BD prático
+Firebase - autenticação
+
+[ORGANIZAR O QUE A PÁGINA DEVERÁ TER]
+- Conferir leaderboard da semana
+- Acessar perfil do usuário (via login)
+- Consultar Perfil (visitar e ver informações)
+
 1. Estatísticas de Jogo
 Número de inimigos destruídos: Quantos asteroides ou inimigos o jogador destruiu ao longo do tempo.
 -- Tempo total jogado: Quantas horas o jogador dedicou ao jogo.
